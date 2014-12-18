@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'pg'
 gem 'spring'
 gem 'devise'
+gem 'haml-rails'
 
 group :development do
   gem 'zeus'
