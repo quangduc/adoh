@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root to: 'sites#home'
 
   resources :comments, only: [:create, :update, :delete]
+
+  resources :post, only: [:show]
 end
