@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:delete]
+  expose(:comment)
+
   def create
-    comment = Comment.create(comment_params)
     if comment.save
       head :ok
     else
@@ -9,23 +9,13 @@ class CommentsController < ApplicationController
     end
   end
 
-  def update_content
-    Comment.update_attributes(content: params[:content])
+  def update
+    comment.save
     head :ok
   end
 
   def delete
-    @comment.delete
+    comment.delete
     head :ok
-  end
-
-  private
-
-  def comment_params
-    params.require(:comment).permit(:post_id, :content, :name, :email)
-  end
-
-  def set_comment
-    @comment = Comment.find(params[:id])
   end
 end
