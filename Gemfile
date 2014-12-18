@@ -14,13 +14,6 @@ gem 'spring'
 gem 'devise'
 gem 'haml-rails'
 gem 'decent_exposure'
-
-group :development do
-  gem 'zeus'
-end
-
-group :test do
-
-end
+gem 'activeadmin', github: 'activeadmin'
 
 
