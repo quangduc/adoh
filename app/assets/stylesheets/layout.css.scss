@@ -1,0 +1,65 @@
+html {
+  font-size: 14px;
+  font-family: 'Vermin', Helvetica, Arial, sans-serif;
+
+  body {
+
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+input, button {
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+.clearfix {
+  &:after, &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+p {
+  margin-top: 0;
+}

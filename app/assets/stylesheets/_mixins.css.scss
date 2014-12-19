@@ -1,0 +1,11 @@
+@mixin title-font {
+  font-family: 'Vermin', Helvetica, Arial, sans-serif;
+}
+
+@mixin lato-font {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}

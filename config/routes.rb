@@ -7,4 +7,11 @@ Rails.application.routes.draw do
   resources :comments, only: [:create, :update, :delete]
 
   resources :post, only: [:show]
+
+  resources :sites do
+    collection do
+      get :design
+      get :contact_us
+    end
+  end
 end
