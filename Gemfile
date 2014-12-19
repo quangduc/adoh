@@ -16,5 +16,5 @@ gem 'haml-rails'
 gem 'decent_exposure'
 gem 'activeadmin', github: 'activeadmin'
 gem 'flickr-fu'
-gem 'carrierwave'
+gem 'byebug'
 
