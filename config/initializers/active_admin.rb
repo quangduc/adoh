@@ -24,7 +24,7 @@ ActiveAdmin.setup do |config|
   # will be added to.
   #
   # eg:
-  config.default_namespace = :admin
+  #   config.default_namespace = :hello_world
   #
   # This will create resources in the HelloWorld module and
   # will namespace routes to /hello_world/*
@@ -54,7 +54,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the application controller.
-  config.authentication_method = :authenticate_admin_user!
+  config.authentication_method = :authenticate_user!
 
   # == User Authorization
   #
