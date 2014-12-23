@@ -171,4 +171,59 @@
       font-size: 16px;
     }
   }
+
+  .home-slider {
+    margin-bottom: 100px;
+    img {
+      height: 500px;
+    }
+  }
+
+  .slogan {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .map-container {
+    overflow: hidden;
+    height: 600px;
+    padding-top: 40px;
+
+    #map {
+      width: 70%;
+      height: 100%;
+    }
+
+    .info-list {
+      width: 30%;
+      height: 100%;
+      background-color: #262626;
+      padding-top: 40px;
+      padding-left: 60px;
+
+      .header {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .info {
+        dt {
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+          margin-top: 15px;
+        }
+
+        dd {
+          font-size: 18px;
+          margin-top: 5px;
+          margin-left: 0;
+          color: #7a7c79;
+        }
+      }
+    }
+  }
 }
+

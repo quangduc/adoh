@@ -2,14 +2,14 @@ html {
   font-size: 14px;
   font-family: 'Vermin', Helvetica, Arial, sans-serif;
 
-  body {
-
-  }
-
   a {
     color: black;
     text-decoration: none;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .left {

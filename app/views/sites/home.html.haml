@@ -1,6 +1,7 @@
 .container
   .top-bar
-    = image_tag image_url('top-logo.png'), width: 100, height: 79
+    %a{ href: '/' }
+      = image_tag image_url('top-logo.png'), width: 100, height: 79
   %nav
     %ul
       %li= link_to "Home", root_path
@@ -34,6 +35,30 @@
           Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new
         %button.read-more-btn
           READ MORE
+
+  .home-slider.flexslider
+    %ul.slides
+      - @slider_photo_url.each do |photo_url|
+        %li
+          %img{ src: photo_url }
+
+  %p.slogan
+    \-  LET'S MAKE SOMETHING GREAT TOGETHER  -
+  .map-container
+    #map.left
+    .info-list.right
+      %h3.header CONTACT
+      %dl.info
+        %dt Location
+        %dd 601 CT3, Apartment Ha Do
+        %dd 02 Nguyen Van Cong St.
+        %dd Go Vap District, HMCM
+        %dt Phone numbers
+        %dd (+84) 905 929 913
+        %dd (+84) 904 549 539
+        %dt E-mail
+        %dd conghoan@adoh.com
+        %dd dat.nguyen.arch@adoh.com
 
 
 
