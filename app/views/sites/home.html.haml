@@ -5,9 +5,8 @@
   %nav
     %ul
       %li= link_to "Home", root_path
-      %li= link_to "Graphic design", design_sites_path(type: 'graphic')
-      %li= link_to "Interior desgin", design_sites_path(type: 'interior')
-      %li= link_to "Pallet wood design", design_sites_path(type: 'pallet_wood')
+      - @sites.each do |site|
+        %li= link_to site.title, site_path(site)
       %li= link_to "Contact", contact_us_sites_path
 
   .gallery

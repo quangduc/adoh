@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   resources :sites do
     collection do
-      get :design
       get :contact_us
     end
   end
