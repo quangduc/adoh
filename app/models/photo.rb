@@ -1,3 +1,3 @@
 class Photo < ActiveRecord::Base
-  belongs_to :site, inverse_of: :photos
+  belongs_to :album, inverse_of: :photos
 end

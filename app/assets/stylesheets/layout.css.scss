@@ -1,3 +1,5 @@
+@import "mixins";
+
 html {
   font-size: 14px;
   font-family: 'Vermin', Helvetica, Arial, sans-serif;
@@ -10,6 +12,8 @@ html {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .left {
@@ -27,6 +31,7 @@ input, button {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 input:focus, button:focus {
@@ -63,3 +68,63 @@ input:focus, button:focus {
 p {
   margin-top: 0;
 }
+
+.top-bar {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 80px;
+
+    ul {
+      list-style-type: none;
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        height: 50px;
+
+        a {
+          @include uppercase;
+          display: inline-block;
+          padding: 0 10px;
+          border-radius: 3px;
+          font-size: 18px;
+          font-weight: 300;
+          height: 43px;
+          line-height: 43px;
+          border: 1px solid transparent;
+        }
+
+        &:hover a {
+          border: 1px solid grey;
+          -webkit-transition: font-size 0.25s;
+          font-size: 22px;
+        }
+
+        &:nth-child(1) {
+          width: 80px;
+        }
+
+        &:nth-child(2) {
+          width: 285px;
+        }
+
+        &:nth-child(3) {
+          width: 215px;
+        }
+
+        &:nth-child(4) {
+          width: 300px;
+        }
+
+        &:nth-child(5) {
+          width: 100px;
+        }
+      }
+    }
+  }

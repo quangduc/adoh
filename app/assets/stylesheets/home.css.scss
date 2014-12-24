@@ -3,66 +3,6 @@
 .container {
   width: 100%;
 
-  .top-bar {
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  nav {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    height: 80px;
-
-    ul {
-      list-style-type: none;
-      display: inline-block;
-
-      li {
-        display: inline-block;
-        height: 50px;
-
-        a {
-          @include uppercase;
-          display: inline-block;
-          padding: 0 10px;
-          border-radius: 3px;
-          font-size: 18px;
-          font-weight: 300;
-          height: 43px;
-          line-height: 43px;
-          border: 1px solid transparent;
-        }
-
-        &:hover a {
-          border: 1px solid grey;
-          -webkit-transition: font-size 0.25s;
-          font-size: 22px;
-        }
-
-        &:nth-child(1) {
-          width: 80px;
-        }
-
-        &:nth-child(2) {
-          width: 285px;
-        }
-
-        &:nth-child(3) {
-          width: 215px;
-        }
-
-        &:nth-child(4) {
-          width: 300px;
-        }
-
-        &:nth-child(5) {
-          width: 100px;
-        }
-      }
-    }
-  }
-
   .gallery {
     overflow: hidden;
 
@@ -144,32 +84,15 @@
         width: 65%;
         margin-top: 0;
         line-height: 30px;
+        @include can-read-more;
 
-        p {
-          -webkit-transition: height 0.5s;
-          overflow: hidden;
-
-          &.less {
-            height: 90px;
-          }
-
-          &.more {
-            height: 210px;
-          }
+        .read-more-btn {
+          background-color: #70a8d9;
+          color: white;
         }
       }
     }
 
-    .read-more-btn {
-      background-color: #70a8d9;
-      border-radius: 20px;
-      width: 150px;
-      text-align: center;
-      height: 34px;
-      line-height: 30px;
-      color: white;
-      font-size: 16px;
-    }
   }
 
   .home-slider {
@@ -184,7 +107,7 @@
     text-align: center;
   }
 
-  .map-container {
+  #contact-us {
     overflow: hidden;
     height: 600px;
     padding-top: 40px;

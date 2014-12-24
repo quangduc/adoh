@@ -4,31 +4,15 @@
     %title Adoh
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
-    = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyChzZdcrkDyMaLOuwNiDRbNAZDzdzfeIP8'
-    :javascript
-      var map;
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(10.81624, 106.67658),
-          zoom: 18,
-          mapTypeId : google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById('map'),
-            mapOptions);
-
-        navigator.geolocation.getCurrentPosition(showPosition);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-      var showPosition = function (position) {
-        var userLatLng = new google.maps.LatLng(10.81624, 106.67658);
-        var marker = new google.maps.Marker({
-          position: userLatLng,
-          title: 'Your Location',
-          map: map
-        });
-      }
-
     = csrf_meta_tags
   %body
+    .top-bar
+      %a{ href: '/' }
+        = image_tag image_url('top-logo.png'), width: 100, height: 79
+    %nav
+      %ul
+        %li= link_to "Home", root_path
+        - sites.each do |site|
+          %li= link_to site.title, site_path(site)
+        %li= link_to "Contact", "#", id: "contact-us-link"
     = yield

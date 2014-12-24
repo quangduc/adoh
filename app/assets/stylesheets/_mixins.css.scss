@@ -9,3 +9,28 @@
 @mixin uppercase {
   text-transform: uppercase;
 }
+
+@mixin can-read-more {
+  p {
+    overflow: hidden;
+
+    &.less {
+      max-height: 90px;
+    }
+
+    &.more {
+      height: auto;
+    }
+  }
+
+  .read-more-btn {
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    height: 34px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+

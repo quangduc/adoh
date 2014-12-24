@@ -1,5 +1,6 @@
 ActiveAdmin.register Post do
   actions :index, :show, :new, :create, :update, :edit, :destroy
+  permit_params :title, :description, :content, :source, :avatar, :site_id
 
   index do
     selectable_column
@@ -17,7 +18,8 @@ ActiveAdmin.register Post do
       f.input :description
       f.input :content, as: :text
       f.input :source
-      f.input :avatar, as: :file
+      f.input :avatar
+      f.input :site_id, as: :select, collection: Site.pluck(:title, :id)
     end
     f.actions
   end
