@@ -1,0 +1,18 @@
+.posts-show.container
+  .page-content
+    = render partial: 'posts/list', locals: { posts: posts }
+    .post-container.left
+      .avatar
+        %img{ src: post.avatar }
+      .post-content
+        .title-container
+          %h4.title= post.title
+          .source= post.source
+
+        .description= post.description
+        .content= simple_format(post.content)
+
+
+
+
+

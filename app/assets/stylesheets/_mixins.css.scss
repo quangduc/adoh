@@ -10,12 +10,12 @@
   text-transform: uppercase;
 }
 
-@mixin can-read-more {
+@mixin can-read-more($max-height: 90px) {
   p {
     overflow: hidden;
 
     &.less {
-      max-height: 90px;
+      max-height: $max-height;
     }
 
     &.more {

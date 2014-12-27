@@ -1,10 +1,7 @@
 class PostsController < ApplicationController
-  expose(:posts)
   expose(:post)
+  expose(:posts)
 
   def show
-  end
-
-  def index
   end
 end

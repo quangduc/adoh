@@ -1,0 +1,14 @@
+.post-list-container.left
+  .posts.cycle-slideshow.vertical(data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#next3"
+                                    data-cycle-prev="#prev3" data-cycle-carousel-visible="3"
+                                    data-cycle-carousel-vertical="true")
+    - posts.each do |post|
+      %a.post{ href: post_path(post) }
+        .post-title= post.title
+        %p= post.description
+
+  %a.facebook-address{ href: "/" }
+    = image_tag image_url('fb.png'), class: 'left facebook-btn'
+    .left
+      %h5 FACEBOOK
+      %p ADOH graphic design

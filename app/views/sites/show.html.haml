@@ -1,25 +1,22 @@
-.site-container
+.site-container.container
   .top-content
     .title.left
-      %h3= @site.title
+      %h3= site.title
       %p Introduce
-    .description.right
-      %p.less= @site.description
+    .description.left
+      %p.less= site.description
       %button.read-more-btn READ MORE
 
   .content
-    .left-content.left
-      %ul.posts
-        - @posts.each do |post|
+    = render partial: 'posts/list', locals: { posts: site.posts }
+
+    .albums.right.flexslider
+      %ul.slides
+        - site.albums.find_in_batches(batch_size: 7) do |albums|
           %li
-            %a.post-title{ href: post_path(post) }= post.title
-            %p= post.description
+            - albums.each_with_index do |album, index|
+              %a.album.left{class: "album-#{index+1}", href: album_path(album)}
+                %img{src: album.avatar.photo}
 
-      %a.facebook-address{ href: "/" }
-        = image_tag image_url('fb.png'), class: 'left facebook-btn'
-        .left
-          %h5 FACEBOOK
-          %p ADOH graphic design
 
-    .albums.right
 

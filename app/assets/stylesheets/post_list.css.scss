@@ -1,0 +1,60 @@
+@mixin sidebar-background {
+  background: #adddc6; /* Old browsers */
+  background: -moz-linear-gradient(top, #adddc6 0%, #a7dac3 0%, #a7dac3 4%, #a8dbc5 5%, #abdcc5 5%, #a8dbc5 5%, #abdcc5 5%, #a8dbc5 5%, #abdcc5 5%, #a8dbc5 5%, #abdcc5 6%, #a8dbc5 6%, #abdcc5 6%, #a8dbc5 6%, #abdcc5 6%, #abdcc5 7%, #acddc8 7%, #aadcc8 8%, #abdcc5 8%, #aadcc8 8%, #aadcc8 9%, #aeddc9 10%, #aeddca 13%, #b2dfcc 14%, #b0decc 15%, #b5dfcf 18%, #b5dfcf 20%, #b8e1ce 21%, #b5dfcf 21%, #b9e1cf 22%, #b6e0ce 22%, #b6e0ce 23%, #b9e1cf 23%, #b9e1cf 26%, #bce2cf 26%, #b9e1cf 26%, #bce2cf 26%, #b9e2d0 27%, #bce2cf 27%, #bce2cf 31%, #bfe3cf 31%, #bee2cf 32%, #c1e3cf 33%, #c1e3cf 33%, #bee2cf 33%, #c2e4d0 35%, #c2e4d0 38%, #c5e5d1 38%, #c4e4d0 39%, #c7e6d0 39%, #c7e6d0 40%, #c4e4d0 40%, #c7e6d0 40%, #c7e6d0 42%, #c8e6d2 42%, #cbe7d3 42%, #c8e6d2 42%, #cbe7d3 42%, #c8e6d2 42%, #cbe7d3 43%, #c8e6d2 43%, #cce8d2 43%, #c8e6d2 43%, #cce8d2 43%, #c8e6d2 43%, #cce8d2 44%, #c8e6d2 44%, #cce8d2 44%, #cbe7d3 45%, #cee9d4 45%, #cce8d3 45%, #d0e9d6 46%, #cee9d4 47%, #d1ead8 47%, #d0e9d6 48%, #d1ead8 48%, #d4ebda 48%, #d1ead8 48%, #d4ebda 49%, #d1ead8 49%, #d4ebda 49%, #d4ebda 49%, #d1ead8 49%, #d4ebda 49%, #d1ead8 49%, #d4ebda 49%, #d6ecdb 50%, #d4ebda 50%, #daeedf 53%, #d9edde 53%, #ddefe1 54%, #dbeedf 54%, #ddefe1 54%, #dcefe0 54%, #def0e3 55%, #dfefe2 56%, #e2f1e5 56%, #e0f0e4 57%, #e4f0e6 58%, #e3f2e6 59%, #e6f0e8 59%, #e4f0e6 60%, #e8f1e9 61%, #e6f0e8 61%, #e9f1ea 62%, #e6f0e8 62%, #e9f2eb 62%, #e8f0e8 62%, #e9f2eb 62%, #ebf2ec 66%, #eef3ef 66%, #eef3ef 69%, #f1f4f2 70%, #f0f3f0 72%, #f2f4f3 72%, #f4f4f4 76%, #f4f4f4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#adddc6), color-stop(0%,#a7dac3), color-stop(4%,#a7dac3), color-stop(5%,#a8dbc5), color-stop(5%,#abdcc5), color-stop(5%,#a8dbc5), color-stop(5%,#abdcc5), color-stop(5%,#a8dbc5), color-stop(5%,#abdcc5), color-stop(5%,#a8dbc5), color-stop(6%,#abdcc5), color-stop(6%,#a8dbc5), color-stop(6%,#abdcc5), color-stop(6%,#a8dbc5), color-stop(6%,#abdcc5), color-stop(7%,#abdcc5), color-stop(7%,#acddc8), color-stop(8%,#aadcc8), color-stop(8%,#abdcc5), color-stop(8%,#aadcc8), color-stop(9%,#aadcc8), color-stop(10%,#aeddc9), color-stop(13%,#aeddca), color-stop(14%,#b2dfcc), color-stop(15%,#b0decc), color-stop(18%,#b5dfcf), color-stop(20%,#b5dfcf), color-stop(21%,#b8e1ce), color-stop(21%,#b5dfcf), color-stop(22%,#b9e1cf), color-stop(22%,#b6e0ce), color-stop(23%,#b6e0ce), color-stop(23%,#b9e1cf), color-stop(26%,#b9e1cf), color-stop(26%,#bce2cf), color-stop(26%,#b9e1cf), color-stop(26%,#bce2cf), color-stop(27%,#b9e2d0), color-stop(27%,#bce2cf), color-stop(31%,#bce2cf), color-stop(31%,#bfe3cf), color-stop(32%,#bee2cf), color-stop(33%,#c1e3cf), color-stop(33%,#c1e3cf), color-stop(33%,#bee2cf), color-stop(35%,#c2e4d0), color-stop(38%,#c2e4d0), color-stop(38%,#c5e5d1), color-stop(39%,#c4e4d0), color-stop(39%,#c7e6d0), color-stop(40%,#c7e6d0), color-stop(40%,#c4e4d0), color-stop(40%,#c7e6d0), color-stop(42%,#c7e6d0), color-stop(42%,#c8e6d2), color-stop(42%,#cbe7d3), color-stop(42%,#c8e6d2), color-stop(42%,#cbe7d3), color-stop(42%,#c8e6d2), color-stop(43%,#cbe7d3), color-stop(43%,#c8e6d2), color-stop(43%,#cce8d2), color-stop(43%,#c8e6d2), color-stop(43%,#cce8d2), color-stop(43%,#c8e6d2), color-stop(44%,#cce8d2), color-stop(44%,#c8e6d2), color-stop(44%,#cce8d2), color-stop(45%,#cbe7d3), color-stop(45%,#cee9d4), color-stop(45%,#cce8d3), color-stop(46%,#d0e9d6), color-stop(47%,#cee9d4), color-stop(47%,#d1ead8), color-stop(48%,#d0e9d6), color-stop(48%,#d1ead8), color-stop(48%,#d4ebda), color-stop(48%,#d1ead8), color-stop(49%,#d4ebda), color-stop(49%,#d1ead8), color-stop(49%,#d4ebda), color-stop(49%,#d4ebda), color-stop(49%,#d1ead8), color-stop(49%,#d4ebda), color-stop(49%,#d1ead8), color-stop(49%,#d4ebda), color-stop(50%,#d6ecdb), color-stop(50%,#d4ebda), color-stop(53%,#daeedf), color-stop(53%,#d9edde), color-stop(54%,#ddefe1), color-stop(54%,#dbeedf), color-stop(54%,#ddefe1), color-stop(54%,#dcefe0), color-stop(55%,#def0e3), color-stop(56%,#dfefe2), color-stop(56%,#e2f1e5), color-stop(57%,#e0f0e4), color-stop(58%,#e4f0e6), color-stop(59%,#e3f2e6), color-stop(59%,#e6f0e8), color-stop(60%,#e4f0e6), color-stop(61%,#e8f1e9), color-stop(61%,#e6f0e8), color-stop(62%,#e9f1ea), color-stop(62%,#e6f0e8), color-stop(62%,#e9f2eb), color-stop(62%,#e8f0e8), color-stop(62%,#e9f2eb), color-stop(66%,#ebf2ec), color-stop(66%,#eef3ef), color-stop(69%,#eef3ef), color-stop(70%,#f1f4f2), color-stop(72%,#f0f3f0), color-stop(72%,#f2f4f3), color-stop(76%,#f4f4f4), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #adddc6 0%,#a7dac3 0%,#a7dac3 4%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#abdcc5 7%,#acddc8 7%,#aadcc8 8%,#abdcc5 8%,#aadcc8 8%,#aadcc8 9%,#aeddc9 10%,#aeddca 13%,#b2dfcc 14%,#b0decc 15%,#b5dfcf 18%,#b5dfcf 20%,#b8e1ce 21%,#b5dfcf 21%,#b9e1cf 22%,#b6e0ce 22%,#b6e0ce 23%,#b9e1cf 23%,#b9e1cf 26%,#bce2cf 26%,#b9e1cf 26%,#bce2cf 26%,#b9e2d0 27%,#bce2cf 27%,#bce2cf 31%,#bfe3cf 31%,#bee2cf 32%,#c1e3cf 33%,#c1e3cf 33%,#bee2cf 33%,#c2e4d0 35%,#c2e4d0 38%,#c5e5d1 38%,#c4e4d0 39%,#c7e6d0 39%,#c7e6d0 40%,#c4e4d0 40%,#c7e6d0 40%,#c7e6d0 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 44%,#c8e6d2 44%,#cce8d2 44%,#cbe7d3 45%,#cee9d4 45%,#cce8d3 45%,#d0e9d6 46%,#cee9d4 47%,#d1ead8 47%,#d0e9d6 48%,#d1ead8 48%,#d4ebda 48%,#d1ead8 48%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d6ecdb 50%,#d4ebda 50%,#daeedf 53%,#d9edde 53%,#ddefe1 54%,#dbeedf 54%,#ddefe1 54%,#dcefe0 54%,#def0e3 55%,#dfefe2 56%,#e2f1e5 56%,#e0f0e4 57%,#e4f0e6 58%,#e3f2e6 59%,#e6f0e8 59%,#e4f0e6 60%,#e8f1e9 61%,#e6f0e8 61%,#e9f1ea 62%,#e6f0e8 62%,#e9f2eb 62%,#e8f0e8 62%,#e9f2eb 62%,#ebf2ec 66%,#eef3ef 66%,#eef3ef 69%,#f1f4f2 70%,#f0f3f0 72%,#f2f4f3 72%,#f4f4f4 76%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #adddc6 0%,#a7dac3 0%,#a7dac3 4%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#abdcc5 7%,#acddc8 7%,#aadcc8 8%,#abdcc5 8%,#aadcc8 8%,#aadcc8 9%,#aeddc9 10%,#aeddca 13%,#b2dfcc 14%,#b0decc 15%,#b5dfcf 18%,#b5dfcf 20%,#b8e1ce 21%,#b5dfcf 21%,#b9e1cf 22%,#b6e0ce 22%,#b6e0ce 23%,#b9e1cf 23%,#b9e1cf 26%,#bce2cf 26%,#b9e1cf 26%,#bce2cf 26%,#b9e2d0 27%,#bce2cf 27%,#bce2cf 31%,#bfe3cf 31%,#bee2cf 32%,#c1e3cf 33%,#c1e3cf 33%,#bee2cf 33%,#c2e4d0 35%,#c2e4d0 38%,#c5e5d1 38%,#c4e4d0 39%,#c7e6d0 39%,#c7e6d0 40%,#c4e4d0 40%,#c7e6d0 40%,#c7e6d0 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 44%,#c8e6d2 44%,#cce8d2 44%,#cbe7d3 45%,#cee9d4 45%,#cce8d3 45%,#d0e9d6 46%,#cee9d4 47%,#d1ead8 47%,#d0e9d6 48%,#d1ead8 48%,#d4ebda 48%,#d1ead8 48%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d6ecdb 50%,#d4ebda 50%,#daeedf 53%,#d9edde 53%,#ddefe1 54%,#dbeedf 54%,#ddefe1 54%,#dcefe0 54%,#def0e3 55%,#dfefe2 56%,#e2f1e5 56%,#e0f0e4 57%,#e4f0e6 58%,#e3f2e6 59%,#e6f0e8 59%,#e4f0e6 60%,#e8f1e9 61%,#e6f0e8 61%,#e9f1ea 62%,#e6f0e8 62%,#e9f2eb 62%,#e8f0e8 62%,#e9f2eb 62%,#ebf2ec 66%,#eef3ef 66%,#eef3ef 69%,#f1f4f2 70%,#f0f3f0 72%,#f2f4f3 72%,#f4f4f4 76%,#f4f4f4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #adddc6 0%,#a7dac3 0%,#a7dac3 4%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#abdcc5 7%,#acddc8 7%,#aadcc8 8%,#abdcc5 8%,#aadcc8 8%,#aadcc8 9%,#aeddc9 10%,#aeddca 13%,#b2dfcc 14%,#b0decc 15%,#b5dfcf 18%,#b5dfcf 20%,#b8e1ce 21%,#b5dfcf 21%,#b9e1cf 22%,#b6e0ce 22%,#b6e0ce 23%,#b9e1cf 23%,#b9e1cf 26%,#bce2cf 26%,#b9e1cf 26%,#bce2cf 26%,#b9e2d0 27%,#bce2cf 27%,#bce2cf 31%,#bfe3cf 31%,#bee2cf 32%,#c1e3cf 33%,#c1e3cf 33%,#bee2cf 33%,#c2e4d0 35%,#c2e4d0 38%,#c5e5d1 38%,#c4e4d0 39%,#c7e6d0 39%,#c7e6d0 40%,#c4e4d0 40%,#c7e6d0 40%,#c7e6d0 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 44%,#c8e6d2 44%,#cce8d2 44%,#cbe7d3 45%,#cee9d4 45%,#cce8d3 45%,#d0e9d6 46%,#cee9d4 47%,#d1ead8 47%,#d0e9d6 48%,#d1ead8 48%,#d4ebda 48%,#d1ead8 48%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d6ecdb 50%,#d4ebda 50%,#daeedf 53%,#d9edde 53%,#ddefe1 54%,#dbeedf 54%,#ddefe1 54%,#dcefe0 54%,#def0e3 55%,#dfefe2 56%,#e2f1e5 56%,#e0f0e4 57%,#e4f0e6 58%,#e3f2e6 59%,#e6f0e8 59%,#e4f0e6 60%,#e8f1e9 61%,#e6f0e8 61%,#e9f1ea 62%,#e6f0e8 62%,#e9f2eb 62%,#e8f0e8 62%,#e9f2eb 62%,#ebf2ec 66%,#eef3ef 66%,#eef3ef 69%,#f1f4f2 70%,#f0f3f0 72%,#f2f4f3 72%,#f4f4f4 76%,#f4f4f4 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #adddc6 0%,#a7dac3 0%,#a7dac3 4%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 5%,#a8dbc5 5%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#a8dbc5 6%,#abdcc5 6%,#abdcc5 7%,#acddc8 7%,#aadcc8 8%,#abdcc5 8%,#aadcc8 8%,#aadcc8 9%,#aeddc9 10%,#aeddca 13%,#b2dfcc 14%,#b0decc 15%,#b5dfcf 18%,#b5dfcf 20%,#b8e1ce 21%,#b5dfcf 21%,#b9e1cf 22%,#b6e0ce 22%,#b6e0ce 23%,#b9e1cf 23%,#b9e1cf 26%,#bce2cf 26%,#b9e1cf 26%,#bce2cf 26%,#b9e2d0 27%,#bce2cf 27%,#bce2cf 31%,#bfe3cf 31%,#bee2cf 32%,#c1e3cf 33%,#c1e3cf 33%,#bee2cf 33%,#c2e4d0 35%,#c2e4d0 38%,#c5e5d1 38%,#c4e4d0 39%,#c7e6d0 39%,#c7e6d0 40%,#c4e4d0 40%,#c7e6d0 40%,#c7e6d0 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 42%,#c8e6d2 42%,#cbe7d3 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 43%,#c8e6d2 43%,#cce8d2 44%,#c8e6d2 44%,#cce8d2 44%,#cbe7d3 45%,#cee9d4 45%,#cce8d3 45%,#d0e9d6 46%,#cee9d4 47%,#d1ead8 47%,#d0e9d6 48%,#d1ead8 48%,#d4ebda 48%,#d1ead8 48%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d1ead8 49%,#d4ebda 49%,#d6ecdb 50%,#d4ebda 50%,#daeedf 53%,#d9edde 53%,#ddefe1 54%,#dbeedf 54%,#ddefe1 54%,#dcefe0 54%,#def0e3 55%,#dfefe2 56%,#e2f1e5 56%,#e0f0e4 57%,#e4f0e6 58%,#e3f2e6 59%,#e6f0e8 59%,#e4f0e6 60%,#e8f1e9 61%,#e6f0e8 61%,#e9f1ea 62%,#e6f0e8 62%,#e9f2eb 62%,#e8f0e8 62%,#e9f2eb 62%,#ebf2ec 66%,#eef3ef 66%,#eef3ef 69%,#f1f4f2 70%,#f0f3f0 72%,#f2f4f3 72%,#f4f4f4 76%,#f4f4f4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adddc6', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+}
+
+$green-text-color: #4a5c5c;
+
+.post-list-container {
+  @include sidebar-background;
+  position: relative;
+  width: 30%;
+  height: 800px;
+
+  .posts {
+    padding-left: 0;
+
+    .post {
+      padding: 30px 50px;
+      color: #4a5c5c;
+      height: 100px;
+      display: block;
+
+      .post-title {
+        font-weight: bold;
+        color: $green-text-color;
+      }
+
+      &:hover {
+        color: white;
+        background-color: #6c9591;
+
+        .post-title {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .facebook-address {
+    overflow: hidden;
+    color: $green-text-color;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+
+    .facebook-btn {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+  }
+}

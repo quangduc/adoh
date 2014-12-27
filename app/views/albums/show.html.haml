@@ -1,0 +1,20 @@
+.albums-show.container
+  .avatar
+    %img{src: album.avatar.photo}
+
+  .content
+    .left.title-container
+      .title= album.title
+      .place= album.place
+    .right
+      .description.left
+        %p.less
+          Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new
+        %button.read-more-btn
+          READ MORE
+
+  .gallery-slider.flexslider
+    .slides
+      - album.shown_photos.each do |photo|
+        %a
+          %img{src: photo.photo}

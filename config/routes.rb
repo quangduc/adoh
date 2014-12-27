@@ -6,11 +6,9 @@ Rails.application.routes.draw do
 
   resources :comments, only: [:create, :update, :delete]
 
-  resources :post, only: [:show]
+  resources :posts, only: [:show]
 
-  resources :sites do
-    collection do
-      get :contact_us
-    end
-  end
+  resources :sites
+
+  resources :albums
 end

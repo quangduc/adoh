@@ -12,7 +12,7 @@
     %nav
       %ul
         %li= link_to "Home", root_path
-        - sites.each do |site|
+        - @sites.each do |site|
           %li= link_to site.title, site_path(site)
         %li= link_to "Contact", "#", id: "contact-us-link"
     = yield
