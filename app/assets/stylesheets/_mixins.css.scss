@@ -1,3 +1,5 @@
+$green-text: #576163;
+
 @mixin title-font {
   font-family: 'Vermin', Helvetica, Arial, sans-serif;
 }
@@ -34,3 +36,10 @@
   }
 }
 
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin lowercase {
+  text-transform: lowercase;
+}

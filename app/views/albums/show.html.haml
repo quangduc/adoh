@@ -1,20 +1,27 @@
 .albums-show.container
-  .avatar
-    %img{src: album.avatar.photo}
+  .avatar.animated-images
+    %figure.animation
+      %img.no-opacity{src: album.avatar.photo}
 
-  .content
+  .middle-content
     .left.title-container
       .title= album.title
       .place= album.place
-    .right
-      .description.left
-        %p.less
-          Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new
-        %button.read-more-btn
-          READ MORE
+    .right.description
+      %p.less
+        Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new Interior Design is the definitive resource for interior designers, architects, and other design professionals, featuring groundbreaking projects, innovative new products, real-time design industry new
+      %button.read-more-btn
+        READ MORE
 
-  .gallery-slider.flexslider
-    .slides
+  .gallery-slider.flexslider.animated-images
+    %ul.slides
       - album.shown_photos.each do |photo|
-        %a
-          %img{src: photo.photo}
+        %li
+          %figure.animation
+            %img{src: photo.photo}
+            %figcaption
+              .figcaption-border
+                %h2= photo.title
+                %p= photo.description
+
+

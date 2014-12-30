@@ -1,7 +1,53 @@
+@import "mixins";
+
 .albums-show {
   .avatar {
     img {
       width: 100%;
+      height: 400px;
+    }
+  }
+
+  .middle-content {
+    overflow: hidden;
+    padding: 60px 100px;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background: -webkit-linear-gradient(337deg, rgb(218, 244, 232) 0%, rgb(229, 227, 238) 100%);
+    background: -o-linear-gradient(337deg, rgb(218, 244, 232) 0%, rgb(229, 227, 238) 100%);
+    background: -ms-linear-gradient(337deg, rgb(218, 244, 232) 0%, rgb(229, 227, 238) 100%);
+    background: -moz-linear-gradient(337deg, rgb(218, 244, 232) 0%, rgb(229, 227, 238) 100%);
+    background: linear-gradient(113deg, rgb(218, 244, 232) 0%, rgb(229, 227, 238) 100%);
+
+    .title-container {
+      width: 40%;
+      color: $green-text;
+
+      .title {
+        font-size: 25px;
+      }
+
+      .place {
+        font-size: 20px;
+      }
+    }
+
+    .description {
+      width: 50%;
+      font-size: 20px;
+
+      @include can-read-more;
+
+      .read-more-btn {
+        background-color: #70a8d9;
+        color: white;
+      }
+    }
+  }
+
+  .gallery-slider {
+    position: relative;
+
+    img {
       height: 400px;
     }
   }

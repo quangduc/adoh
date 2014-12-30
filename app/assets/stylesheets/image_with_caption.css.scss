@@ -1,0 +1,125 @@
+@import "mixins";
+
+.animated-images, .flexslider.animated-images {
+  .animation {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    img {
+      width: calc(100% + 50px);
+      width: -webkit-calc(100% + 50px);
+      opacity: 0.7;
+      transition: opacity 0.50s, transform 0.50s;
+      -o-transition: opacity 0.50s, transform 0.50s;
+      -ms-transition: opacity 0.50s, transform 0.50s;
+      -webkit-transition: opacity 0.50s, transform 0.50s;
+      -moz-transition: opacity 0.50s, transform 0.50s;
+      transform: translate3d(-40px,0,0);
+      -o-transform: translate3d(-40px,0,0);
+      -ms-transform: translate3d(-40px,0,0);
+      -webkit-transform: translate3d(-40px,0,0);
+      -moz-transform: translate3d(-40px,0,0);
+
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: none;
+
+      &.no-opacity {
+        opacity: 1;
+      }
+    }
+
+    figcaption {
+      text-align: left;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+
+      .figcaption-border {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        height: 100%;
+
+        h2 {
+          padding-left: 10px;
+          padding-top: 5px;
+          word-wrap: break-word;
+          text-transform: uppercase;
+          text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+          color: white;
+          font-size: 28px;
+
+          transition: transform 0.50s;
+          -o-transition: transform 0.50s;
+          -ms-transition: transform 0.50s;
+          -webkit-transition: transform 0.50s;
+          -moz-transition: transform 0.50s;
+
+          transform: translate3d(0,40px,0);
+          -o-transform: translate3d(0,40px,0);
+          -ms-transform: translate3d(0,40px,0);
+          -webkit-transform: translate3d(0,40px,0);
+          -moz-transform: translate3d(0,40px,0);
+        }
+
+        p {
+          padding-left: 10px;
+          color: rgba(254, 254, 254, 0.8) !important;
+          opacity: 0;
+          font-size: 18px;
+          letter-spacing: 1px;
+          text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+          font-weight: 300;
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      figcaption {
+        .figcaption-border {
+          h2 {
+            transform: translate3d(0px, 6px, 0px);
+            -o-transform: translate3d(0px, 6px, 0px);
+            -ms-transform: translate3d(0px, 6px, 0px);
+            -webkit-transform: translate3d(0px, 6px, 0px);
+            -moz-transform: translate3d(0px, 6px, 0px);
+          }
+
+          p {
+            transform: translate3d(0px, 6px, 0px);
+            -o-transform: translate3d(0px, 6px, 0px);
+            -ms-transform: translate3d(0px, 6px, 0px);
+            -webkit-transform: translate3d(0px, 6px, 0px);
+            -moz-transform: translate3d(0px, 6px, 0px);
+
+            transition-delay: 0.05s;
+            -o-transition-delay: 0.05s;
+            -ms-transition-delay: 0.05s;
+            -webkit-transition-delay: 0.05s;
+            -moz-transition-delay: 0.05s;
+            transition-duration: 0.50s;
+            -o-transition-duration: 0.50s;
+            -ms-transition-duration: 0.50s;
+            -webkit-transition-duration: 0.50s;
+            -moz-transition-duration: 0.50s;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

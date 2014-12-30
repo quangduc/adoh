@@ -2,8 +2,9 @@
   .page-content
     = render partial: 'posts/list', locals: { posts: posts }
     .post-container.left
-      .avatar
-        %img{ src: post.avatar }
+      .avatar.animated-images
+        %figure.animation
+          %img.no-opacity{ src: post.avatar }
       .post-content
         .title-container
           %h4.title= post.title

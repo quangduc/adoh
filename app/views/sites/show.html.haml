@@ -10,13 +10,17 @@
   .content
     = render partial: 'posts/list', locals: { posts: site.posts }
 
-    .albums.right.flexslider
+    .albums.right.site-flexslider.flexslider.animated-images
       %ul.slides
         - site.albums.find_in_batches(batch_size: 7) do |albums|
           %li
             - albums.each_with_index do |album, index|
-              %a.album.left{class: "album-#{index+1}", href: album_path(album)}
+              %a.animation.left{class: "album-#{index+1}", href: album_path(album)}
                 %img{src: album.avatar.photo}
+                %figcaption
+                  .figcaption-border
+                    %h2= album.title
+                    %p= album.description
 
 
 
