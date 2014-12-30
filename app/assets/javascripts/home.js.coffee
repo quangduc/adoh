@@ -20,3 +20,10 @@ $ ->
   $('.readmore').readmore
     speed: 200,
     maxHeight: 65
+
+  $('.scroll_to_top').click ->
+    $('body, html ').animate
+      scrollTop: 0
+      speed: 300
+
+    return false

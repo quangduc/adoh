@@ -10,6 +10,11 @@ html {
   }
 }
 
+body {
+  position: relative;
+  padding-top: 30px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -70,7 +75,6 @@ p {
 }
 
 .top-bar {
-  margin-top: 30px;
   text-align: center;
 }
 
@@ -146,3 +150,15 @@ nav {
   background-color: #70a8d9;
   color: white;
 }
+
+button.scroll_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+}
+
