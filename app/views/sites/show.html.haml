@@ -7,7 +7,7 @@
       %p.readmore= site.description
 
   .content
-    = render partial: 'posts/list', locals: { posts: site.posts }
+    = render partial: 'posts/list', locals: { posts: site.posts, facebook_url: facebook_url(site) }
 
     .albums.right.site-flexslider.flexslider.animated-images
       %ul.slides
