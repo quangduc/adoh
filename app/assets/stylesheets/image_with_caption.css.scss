@@ -9,12 +9,11 @@
     img {
       width: calc(100% + 50px);
       width: -webkit-calc(100% + 50px);
-      opacity: 0.7;
-      transition: opacity 0.50s, transform 0.50s;
-      -o-transition: opacity 0.50s, transform 0.50s;
-      -ms-transition: opacity 0.50s, transform 0.50s;
-      -webkit-transition: opacity 0.50s, transform 0.50s;
-      -moz-transition: opacity 0.50s, transform 0.50s;
+      transition: transform 0.50s;
+      -o-transition: transform 0.50s;
+      -ms-transition: transform 0.50s;
+      -webkit-transition: transform 0.50s;
+      -moz-transition: transform 0.50s;
       transform: translate3d(-40px,0,0);
       -o-transform: translate3d(-40px,0,0);
       -ms-transform: translate3d(-40px,0,0);
@@ -25,10 +24,6 @@
       display: block;
       min-height: 100%;
       max-width: none;
-
-      &.no-opacity {
-        opacity: 1;
-      }
     }
 
     figcaption {
@@ -86,7 +81,6 @@
         -ms-transform: translate3d(0,0,0);
         -webkit-transform: translate3d(0,0,0);
         -moz-transform: translate3d(0,0,0);
-        opacity: 1;
       }
 
       figcaption {

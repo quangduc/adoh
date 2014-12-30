@@ -12,34 +12,6 @@ $green-text: #576163;
   text-transform: uppercase;
 }
 
-@mixin can-read-more($max-height: 90px) {
-  p {
-    overflow: hidden;
-
-    &.less {
-      max-height: $max-height;
-    }
-
-    &.more {
-      height: auto;
-    }
-  }
-
-  .read-more-btn {
-    border-radius: 20px;
-    width: 150px;
-    text-align: center;
-    height: 34px;
-    line-height: 30px;
-    font-size: 16px;
-    margin-top: 15px;
-  }
-}
-
-@mixin uppercase {
-  text-transform: uppercase;
-}
-
 @mixin lowercase {
   text-transform: lowercase;
 }

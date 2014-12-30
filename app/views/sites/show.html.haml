@@ -4,8 +4,7 @@
       %h3= site.title
       %p Introduce
     .description.left
-      %p.less= site.description
-      %button.read-more-btn READ MORE
+      %p.readmore= site.description
 
   .content
     = render partial: 'posts/list', locals: { posts: site.posts }

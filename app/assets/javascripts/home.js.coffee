@@ -16,3 +16,7 @@ $ ->
     minItems: 3
     maxItems: 3
     itemWidth: 300
+
+  $('.readmore').readmore
+    speed: 200,
+    maxHeight: 65

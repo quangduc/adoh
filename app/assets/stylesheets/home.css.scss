@@ -84,7 +84,6 @@
         width: 65%;
         margin-top: 0;
         line-height: 30px;
-        @include can-read-more;
 
         .read-more-btn {
           background-color: #70a8d9;

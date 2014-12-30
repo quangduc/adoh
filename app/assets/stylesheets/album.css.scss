@@ -33,9 +33,7 @@
 
     .description {
       width: 50%;
-      font-size: 20px;
-
-      @include can-read-more;
+      font-size: 18px;
 
       .read-more-btn {
         background-color: #70a8d9;
