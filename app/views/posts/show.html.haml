@@ -1,6 +1,6 @@
 .posts-show.container
   .page-content
-    = render partial: 'posts/list', locals: { posts: posts }
+    = render partial: 'posts/list', locals: { posts: posts, facebook_url: facebook_url(post.site) }
     .post-container.left
       .avatar.animated-images
         %figure.animation
