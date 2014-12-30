@@ -1,14 +1,9 @@
 .container
   .gallery
-    .item.graphic.left
-      = image_tag image_url("header-image-1.png")
-      .item-name GRAPHIC DESIGN
-    .item.interior.left
-      = image_tag image_url("header-image-2.png")
-      .item-name INTERIOR DESIGN
-    .item.pallet-wood.left
-      = image_tag image_url("header-image-3.png")
-      .item-name PALLET WOOD DESIGN
+    - @sites.each do |site|
+      %a.item.graphic.left{class: site.title.gsub(" ", "_").downcase, href: site_path(site)}
+        = image_tag image_url("#{site.title.gsub(" ", "_").downcase}.png")
+        .item-name.uppercase= site.title
 
   .about-us.clearfix
     .search-container.clearfix
