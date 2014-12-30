@@ -1,9 +1,12 @@
-.container
-  .gallery
+.container#homepage
+  .gallery.animated-images
     - @sites.each do |site|
-      %a.item.graphic.left{class: site.title.gsub(" ", "_").downcase, href: site_path(site)}
+      %a.item.graphic.animation.left{class: site.title.gsub(" ", "_").downcase, href: site_path(site)}
         = image_tag image_url("#{site.title.gsub(" ", "_").downcase}.png")
-        .item-name.uppercase= site.title
+        %figcaption
+          .figcaption-border
+            %h2= site.title
+            %p= site.short_description
 
   .about-us.clearfix
     .search-container.clearfix

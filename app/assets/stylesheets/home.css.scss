@@ -1,6 +1,6 @@
 @import "mixins";
 
-.container {
+.container#homepage {
   width: 100%;
 
   .gallery {
@@ -11,7 +11,14 @@
       position: relative;
 
       img {
-        max-width: 100%;
+        height: 500px;
+      }
+
+      figcaption {
+        .figcaption-border {
+          padding-top: 350px;
+          padding-left: 50px;
+        }
       }
 
       .item-name {
