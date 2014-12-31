@@ -27,3 +27,13 @@ $ ->
       speed: 300
 
     return false
+
+  if window.location.hash == "#scroll_to_contact"
+    $('#contact-us-link').click()
+
+  $('.posts-show .post-container').enscroll
+    showOnHover: true
+    verticalTrackClass: 'track3'
+    verticalHandleClass: 'handle3'
+    easingDuration: 200
+

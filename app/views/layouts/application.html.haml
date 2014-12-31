@@ -14,6 +14,6 @@
         %li= link_to "Home", root_path
         - @sites.each do |site|
           %li= link_to site.title, site_path(site)
-        %li= link_to "Contact", "#", id: "contact-us-link"
+        %li= link_to "Contact", "#{root_url}#scroll_to_contact", id: "contact-us-link"
     = yield
     %button.scroll_to_top
