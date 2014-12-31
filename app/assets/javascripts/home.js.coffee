@@ -37,3 +37,8 @@ $ ->
     verticalHandleClass: 'handle3'
     easingDuration: 200
 
+  $(window).scroll ->
+    windowpos = $(window).scrollTop()
+    ele = $('#sticker')
+    $('body').toggleClass('nav_stick', windowpos > ele.position().top)
+    ele.toggleClass('stick', windowpos > ele.position().top)

@@ -9,7 +9,7 @@
     .top-bar
       %a{ href: '/' }
         = image_tag image_url('top_logo.png'), width: 100, height: 79
-    %nav
+    %nav#sticker
       %ul
         %li= link_to "Home", root_path
         - @sites.each do |site|
