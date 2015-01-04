@@ -17,6 +17,9 @@ role :db,  %w{root@128.199.95.252}
 
 server '128.199.95.252', user: 'root', roles: %w{web app}
 
+set :stage, :production
+set :rails_env, :production
+
 
 # Custom SSH Options
 # ==================
