@@ -18,3 +18,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'flickr-fu'
 gem 'byebug'
 
+group :production do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+end
