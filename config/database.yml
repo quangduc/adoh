@@ -8,7 +8,7 @@ default: &default
   adapter: postgresql
   pool: 5
   username: adoh
-  password:
+  password: adoh
   timeout: 5000
 
 development:
@@ -25,3 +25,5 @@ test:
 production:
   <<: *default
   database: adoh_production
+  username: <%= ENV['USER_NAME'] %>
+  password: <%= ENV['USER_PASSWORD'] %>
