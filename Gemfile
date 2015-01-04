@@ -21,4 +21,5 @@ gem 'byebug'
 group :production do
   gem 'capistrano'
   gem 'capistrano-rails'
+  gem 'rvm1-capistrano3', require: false
 end
