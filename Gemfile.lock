@@ -226,6 +226,7 @@ DEPENDENCIES
   activeadmin!
   byebug
   capistrano
+  capistrano-bundler
   capistrano-rails
   coffee-rails (~> 4.0.0)
   decent_exposure
