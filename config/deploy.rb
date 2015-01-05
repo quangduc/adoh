@@ -34,10 +34,5 @@ set :log_level, :debug
 set :keep_releases, 5
 
 namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-    end
-  end
-
+  after 'deploy:setup_config', 'nginx:reload'
 end
