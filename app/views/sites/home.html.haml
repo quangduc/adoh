@@ -2,7 +2,7 @@
   .gallery.animated-images
     - @sites.each do |site|
       %a.item.graphic.animation.left{class: site.title.gsub(" ", "_").downcase, href: site_path(site)}
-        = image_tag image_path("#{site.title.gsub(" ", "_").downcase}.png")
+        = image_tag "#{site.title.gsub(" ", "_").downcase}.png"
         %figcaption
           .figcaption-border
             %h2= site.title
