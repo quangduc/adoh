@@ -37,7 +37,7 @@ namespace :deploy do
   task :reload_nginx do
     on role(:app) do
       within release_path do
-        execute :touch, 'tmp/restart.txt'
+        execute :service, "nginx restart"
       end
     end
   end
