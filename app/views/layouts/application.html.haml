@@ -2,7 +2,7 @@
 %html
   %head
     %title Adoh
-    %link{rel: "icon", type: "image/png", href: image_url('top_logo.png')}
+    %link{rel: "icon", type: "image/png", href: image_url('logo.png')}
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
@@ -17,4 +17,5 @@
           %li= link_to site.title, site_path(site)
         %li= link_to "Contact", "#{root_url}#scroll_to_contact", id: "contact-us-link"
     = yield
-    %button.scroll_to_top
+    %a.scroll_to_top
+      = image_tag "nav-scroll-top.png"
