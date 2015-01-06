@@ -10,40 +10,48 @@
       width: 33.33333333%;
       position: relative;
 
-      img {
-        height: 500px;
+      .dummy {
+        padding-top: 100%;
       }
 
-      figcaption {
-        .figcaption-border {
-          padding-top: 350px;
-          padding-left: 50px;
-          border-width: 2px;
-        }
-      }
-
-      .item-name {
+      .image-container {
         position: absolute;
+        left: 0;
+        top: 0;
         bottom: 0;
-        height: 80px;
-        width: 100%;
-        color: white;
-        font-size: 24px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 80px;
-      }
+        right: 0;
 
-      &.graphic_design .item-name {
-        background: rgba(161,243,228,0.5);
-      }
+        figcaption {
+          .figcaption-border {
+            padding-top: 350px;
+            padding-left: 50px;
+            border-width: 2px;
+          }
+        }
 
-      &.interior_design .item-name {
-        background: rgba(177,218,255,0.5);
-      }
+        .item-name {
+          position: absolute;
+          bottom: 0;
+          height: 80px;
+          width: 100%;
+          color: white;
+          font-size: 24px;
+          font-weight: 300;
+          text-align: center;
+          line-height: 80px;
+        }
 
-      &.pallet_wood_design .item-name {
-        background: rgba(249,184,242,0.5);
+        &.graphic_design .item-name {
+          background: rgba(161,243,228,0.5);
+        }
+
+        &.interior_design .item-name {
+          background: rgba(177,218,255,0.5);
+        }
+
+        &.pallet_wood_design .item-name {
+          background: rgba(249,184,242,0.5);
+        }
       }
     }
   }
