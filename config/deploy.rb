@@ -34,5 +34,16 @@ set :log_level, :debug
 set :keep_releases, 5
 
 namespace :deploy do
-  after 'deploy:setup_config', 'nginx:reload'
+  task :reload_nginx do
+    on role(:app) do
+      within release_path do
+        execute :touch, 'tmp/restart.txt'
+      end
+    end
+  end
 end
+
+# namespace :deploy do
+#   after :deploy, :reload_nginx
+# end
+
