@@ -42,3 +42,4 @@ $ ->
     ele = $('#sticker')
     $('body').toggleClass('nav_stick', windowpos > ele.position().top)
     ele.toggleClass('stick', windowpos > ele.position().top)
+    $('a.scroll_to_top').toggle(windowpos > 200)
