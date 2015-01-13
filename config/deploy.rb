@@ -43,7 +43,7 @@ namespace :deploy do
   end
 end
 
-# namespace :deploy do
-#   after :deploy, :reload_nginx
-# end
+namespace :deploy do
+  after :deploy, :reload_nginx
+end
 
